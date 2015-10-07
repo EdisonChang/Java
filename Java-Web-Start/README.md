@@ -1,4 +1,4 @@
-JDK keytool common commands:
+# JDK Keytool Common Commands:
 -genkey：在用戶主目錄中創建一個預設檔".keystore",還會產生一個mykey的別名，mykey中包含用戶的公開金鑰、私密金鑰和證書(在沒有指定生成位置的情況下,keystore會存在使用者系統預設目錄，如：對於windows系統，會生成在系統的C:\Documents and Settings\UserName\檔案名為“.keystore”)
 -alias：產生別名
 -keystore：指定金鑰庫的名稱(產生的各類資訊將不在.keystore文件中)
