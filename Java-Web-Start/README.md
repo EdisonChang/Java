@@ -10,7 +10,7 @@
 #####-dname: Distinguished-Name Information "CN=first and last name,OU=organizational unit,O=organization,L=City or Locality,ST=State or Province,C=two-letter country code for this unit" <br>
 #####-list: display keystore information - keytool -list -v -keystore [KEYSTORE NAME] -storepass [PASSWORD] <br>
 #####-v: display keystore detail information <br>
-#####-export: export specified keystore to certificate file <br> 
+##### -export: export specified keystore to certificate file <br> 
  +Examole: keytool -export -alias [ALIAS NAME] -file [CERTIFICATE NAME].cer <br>
 #####-keystore: 指定keystore -file 指定匯出的證書位置及證書名稱 -storepass 密碼 <br>
 #####-file: 參數指定匯出到檔的檔案名 <br>
