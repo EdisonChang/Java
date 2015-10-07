@@ -8,14 +8,19 @@
 -storepass: specify key password (the password is for get keystore information) <br>
 -keypass: specify entry password (private password) <br>
 -dname: Distinguished-Name Information "CN=first and last name,OU=organizational unit,O=organization,L=City or Locality,ST=State or Province,C=two-letter country code for this unit" <br>
--list: display keystore information - keytool -list -v -keystore [KEYSTORE NAME] -storepass [PASSWORD] <br>
+-list: display keystore information <br>
 -v: display keystore detail information <br>
+Example: keytool -list -v -keystore [KEYSTORE NAME] -storepass [PASSWORD] <br>
 -export: export specified keystore to certificate file <br> 
-Examole: keytool -export -alias [ALIAS NAME] -file [CERTIFICATE NAME].cer <br>
--keystore: 指定keystore -file 指定匯出的證書位置及證書名稱 -storepass 密碼 <br>
--file: 參數指定匯出到檔的檔案名 <br>
--delete: 刪除金鑰庫中某條目 keytool -delete -alias 指定需刪除的別名； -keystore 指定keystore；-storepass 指定密碼 <br>
--printcert: 查看匯出的證書資訊 keytool -printcert -file yushan.crt <br>
--keypasswd: 修改金鑰庫中指定條目指令：keytool -keypasswd -alias 需修改的別名 -keypass 舊密碼 -new  新密碼  -storepass keystore密碼  -keystore sage <br>
--storepasswd: 修改keystore指令：keytool -storepasswd -keystore e:\polin.keystore(需修改口令的keystore) -storepass 123456(原始密碼) -new polinwei(新密碼) <br>
--import: 將已簽名數位憑證導入金鑰庫  keytool -import -alias 指定導入條目的別名 -keystore 指定keystore -file 需導入的證書 <br>
+Example: keytool -export -alias [ALIAS NAME] -keystore [KEYSTORE NAME] -file [CERTIFICATE NAME] -storepass [PASSWORD] <br>
+-file: specify export file name <br>
+-delete: delete entry in keystore <br> 
+Example: keytool -delete -alias [ALIAS NAME] -keystore [KEYSTORE NAME] -storepass [PASSWORD] <br>
+-printcert: look over certificate information <br>
+Example: keytool -printcert -file yushan.crt <br>
+-keypasswd: modify entry in keysrtore <br>
+Example: keytool -keypasswd -alias [ALIAS NAME] -keypass [OLD PASSWORD] -new [NEW PASSWORD] -storepass [PASSWORD] -keystore [KEYSTORE NAME] <br>
+-storepasswd: modify keysrtore <br>
+Example: keytool -storepasswd -keystore [KEYSTORE NAME] -storepass [ORIGINAL PASSWORD] -new [NEW PASSWORD] <br>
+-import: import the signed digital certificate to keystore <br>
+Example: keytool -import -alias [ALIAS NAME] -keystore [KEYSTORE NAME] -file [CERTIFICATE NAME] <br>
