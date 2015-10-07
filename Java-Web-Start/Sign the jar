@@ -1,0 +1,1 @@
+jarsigner -tsa [TIMESTAMP SERVER] -keystore [KEYSTORE FILE] [MY ARCHIVE JAR] [ALIAS NAME]
