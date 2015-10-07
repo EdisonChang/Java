@@ -1,4 +1,9 @@
 ## JDK Keytool Common Commands:
+1. Create keystore
+2. Imoport certificate to keystore
+3. Check keystore
+4. Sign the jar
+
 -genkey: generate keys <br>
 -alias: generate alias <br>
 -keystore: specify the name (and optionally path) of the keystore you are creating or already using <br>
