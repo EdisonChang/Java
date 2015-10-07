@@ -1,16 +1,17 @@
 ## JDK Keytool Common Commands:
 #####-genkey: generate keys <br>
 #####-alias: generate alias <br>
-#####-keystore: appoint the name (and optionally path) of the keystore you are creating or already using <br>
-#####-keyalg: appoint key algorithm (Example: RSA  DSA（default is DSA）) <br>
-#####-validity: appoint expiry day <br>
-#####-keysize: appoint key length <br>
-#####-storepass: appoint key password (the password is for get keystore information) <br>
-#####-keypass: 指定別名條目的密碼(私密金鑰的密碼) <br>
-#####-dname: 指定證書擁有者資訊 例如： "CN=名字與姓氏,OU=組織單位名稱,O=組織名稱,L=城市或區域名稱,ST=州或省份名稱,C=單位的兩字母國家代碼" <br>
-#####-list: 顯示金鑰庫中的證書資訊 keytool -list -v -keystore 指定keystore -storepass 密碼 <br>
-#####-v: 顯示金鑰庫中的證書詳細資訊 <br>
-#####-export: 將別名指定的證書匯出到檔 keytool -export -alias 需要匯出的別名 <br>
+#####-keystore: specify the name (and optionally path) of the keystore you are creating or already using <br>
+#####-keyalg: specify key algorithm (Example: RSA  DSA（default is DSA）) <br>
+#####-validity: specify expiry day <br>
+#####-keysize: specify key length <br>
+#####-storepass: specify key password (the password is for get keystore information) <br>
+#####-keypass: specify entry password (private password) <br>
+#####-dname: Distinguished-Name Information "CN=first and last name,OU=organizational unit,O=organization,L=City or Locality,ST=State or Province,C=two-letter country code for this unit" <br>
+#####-list: display keystore information - keytool -list -v -keystore [KEYSTORE NAME] -storepass [PASSWORD] <br>
+#####-v: display keystore detail information <br>
+#####-export: export specified keystore to certificate file <br> 
+##### +Examole: keytool -export -alias [ALIAS NAME] -file [CERTIFICATE NAME].cer <br>
 #####-keystore: 指定keystore -file 指定匯出的證書位置及證書名稱 -storepass 密碼 <br>
 #####-file: 參數指定匯出到檔的檔案名 <br>
 #####-delete: 刪除金鑰庫中某條目 keytool -delete -alias 指定需刪除的別名； -keystore 指定keystore；-storepass 指定密碼 <br>
