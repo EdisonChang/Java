@@ -1,0 +1,23 @@
+// create a interface, One thing about a marker interface is that it does not have any methods in the interface definition.
+
+public interface MarkerInterfacePattern {
+
+}
+
+// make class to implemnts MarkerInterfacePattern interface
+
+public class MarkerInterfacePatternExample implements MarkerInterfacePattern {
+
+}
+
+// then you can do like below code before calling the method
+
+if (source instanceof MarkerInterfacePattern) {
+  // call parseFrom method using reflection
+}
+
+or
+
+if (MarkerInterfacePattern.class.isAssignableFrom(sourceClass)) {
+  // call parseFrom method using reflection
+}
