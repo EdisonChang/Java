@@ -13,11 +13,11 @@ public class MarkerInterfacePatternExample implements MarkerInterfacePattern {
 // then you can do like below code before calling the method
 
 if (source instanceof MarkerInterfacePattern) {
-  // call parseFrom method using reflection
+  // do something
 }
 
 or
 
 if (MarkerInterfacePattern.class.isAssignableFrom(sourceClass)) {
-  // call parseFrom method using reflection
+  // do something
 }
